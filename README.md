@@ -8,8 +8,8 @@ The layout follows the **cluster administrator / platform operations** scope of 
 
 | # | Topics | Notes |
 |---|--------|-------|
-| 01 |  | [Day 01](day-01/notes.md) |
-| 02 |  | [Day 02](day-02/notes.md) |
+| 01 | Core Concepts | [Day 01](day-01/notes.md) |
+| 02 | Core Concepts | [Day 02](day-02/notes.md) |
 | 03 |  | [Day 03](day-03/notes.md) |
 | 04 |  | [Day 04](day-04/notes.md) |
 | 05 |  | [Day 05](day-05/notes.md) |

@@ -6,65 +6,11 @@ The layout follows the **cluster administrator / platform operations** scope of 
 
 ## Topics
 
-<details>
-<summary><strong>Advanced — CKA blueprint and how to use this table</strong></summary>
-
-Official domains drive what shows up on the exam; use them to **bias practice time**, not to match every lesson day one-to-one.
-
-| Domain | Rough weight | What “good” looks like |
-|--------|----------------|------------------------|
-| Troubleshooting | ~30% | Fast `kubectl` flows, control plane & worker signals, CNI/DNS/storage triage |
-| Cluster architecture, install & config | ~25% | `kubeadm`, upgrades, etcd backups, RBAC wiring |
-| Services & networking | ~20% | Services, Ingress, NetworkPolicies, CoreDNS |
-| Workloads & scheduling | ~15% | Deployments, probes, resources, affinity, priority |
-| Storage | ~10% | PV/PVC/SC, volume mounts, access modes |
-
-**Exam ergonomics:** alias `k`, practice with `--dry-run=client -o yaml` then `| kubectl apply -f -`, know [kubernetes.io/docs](https://kubernetes.io/docs/) bookmarks you will actually open during the test.
-
-</details>
-
-### Roadmap (25-day arc)
-
-```mermaid
-flowchart LR
-  subgraph core[Core]
-    D1[D01–02]
-  end
-  subgraph sched[Scheduling]
-    D2[D03–04]
-  end
-  subgraph obs[Observability]
-    D3[D05]
-  end
-  subgraph alm[App lifecycle]
-    D4[D06–07]
-  end
-  subgraph maint[Maintenance]
-    D5[D08–09]
-  end
-  subgraph sec[Security]
-    D6[D10–12]
-  end
-  subgraph stor[Storage]
-    D7[D13–14]
-  end
-  subgraph net[Networking]
-    D8[D15–17]
-  end
-  subgraph install[Install]
-    D9[D18]
-  end
-  subgraph fix[Troubleshooting]
-    D10[D19–20]
-  end
-  subgraph finish[Exams]
-    D11[D21–25]
-  end
-  core --> sched --> obs --> alm --> maint --> sec --> stor --> net --> install --> fix --> finish
-```
+**Start here:** [Day 0 — Orientation & CKA map](day-0/notes.md) has domain weights, the Mermaid roadmap, exam ergonomics, and a full day index.
 
 | Day | CKA domain (guide) | Topic | Notes |
 |:---:|:-------------------|-------|-------|
+| 0 | Mixed | Orientation & CKA blueprint | [Day 0](day-0/notes.md) |
 | 01 | Cluster architecture, install & config | Core Concepts | [Day 01](day-01/notes.md) |
 | 02 | Cluster architecture, install & config | Core Concepts | [Day 02](day-02/notes.md) |
 | 03 | Workloads & scheduling | Scheduling | [Day 03](day-03/notes.md) |
